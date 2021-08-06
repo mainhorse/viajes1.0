@@ -59,7 +59,6 @@ body{
 }
 
 nav{
-    display: none;
     background-color: #FFFFFF;
     width: var(--navWidth);
     height: var(--navHeigt);
@@ -1082,18 +1081,27 @@ footer{
 
 @media screen and (max-device-width: 550px){
 
-    .viewOne{
-        width: var(--viewWidth);
-        height: 100vh;
-        display: flex;
-        flex-flow: column-reverse nowrap;  
-        justify-content: flex-start;  
-        align-items: center;
-        margin-top: -2%;
-        margin-bottom: 3%;
-        float: left;
+    nav{
+        height: 12%;
+    }
+    nav .logo{
+        width: 18%;
+        height: 90%;
+    }
+    
+    nav ul{
+        width: 60%;
+    }
+    
+    nav ul li{
+        width: 25%;
+        font-size: 2.6vw;
     }
 
+    .viewOne {
+        flex-flow: column nowrap;
+        height: 59vh;
+    }
     .leftViewOne{
         display: none;
     }
@@ -1101,6 +1109,7 @@ footer{
     .centerViewOne{
         width: 100%;
         height: 100%;
+        margin: 0;
        
     }
 
@@ -1108,7 +1117,7 @@ footer{
         font-size: 4vw;
         margin-bottom: 1%;
         text-align: center;
-        margin-top: 15%;
+        margin-top: 20vh;
     }
 
     .centerViewOne p:nth-child(2){
@@ -1124,9 +1133,11 @@ footer{
     }
 
     .centerViewOne p:nth-child(4){
-        font-size: 5vw;
+        height: 5%;
+        font-size: 3vw;
         margin-bottom: 10%;
         text-align: center;
+
     }
 
     .rightViewOne{
@@ -1137,17 +1148,8 @@ footer{
         display: none;
     }
 
-    .viewTwo{
-        background-color: #FFFFFF;
-        opacity: 1;
-        width: var(--viewWidth);
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content:space-between;
-        align-items:center;
-        float: left;
+    .viewTwo {
+        height: 50vh;
     }
 
     .viewTwoOne{
@@ -1155,6 +1157,7 @@ footer{
         height: 2px;
         margin: 0;
     }
+
 
     .viewTwoTwo p:nth-child(1){
         font-size: 3vw;
@@ -1169,115 +1172,319 @@ footer{
     }
      
     .viewTwoIcons {
-        width: 100%;
-        height: 11%;
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: stretch;
-        margin-left: 10%;
+        width: 75%;
+        height: 15%;
+        align-content: center;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    .viewTwoIcons img:first-child {
+        width: 20%;
+        height: 100%;
+    }
+
+    .viewTwoIcons img:nth-child(2) {
+        width: 20%;
+        height: 100%;
+    }
+
+    .viewTwoIcons img:last-child {
+        width: 20%;
+        height: 100%;
     }
 
     .viewTwoTextIcons {
-        width: 100%;
-        height: 35%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-end;
-        align-content: stretch;
-        margin-top: -18%;
-        margin-left: -68%;
-    }
-    
-    .conTitleViewThree {
-        width: 60%;
-        height: 11%;
-        margin-bottom: 5.25%;
-        font-size: 3vw;
-        font-family: Segoe UI, Regular;
-        text-align: center;
-        color: #606060;
-        font-weight: normal;
-        margin-bottom: 36%;
-    }
-    .cardsContriesImg {
-        width: 100%;
-        height: 75%;
-        background-color: rgba(255,255,255,0.5);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        width: 80%;
+        height: 30%;
         align-content: center;
     }
 
-    .cardSize {
+    .viewTwoTextIcons p {
+        width: 26%;
+        height: 50%;
+        font-size: 2.2vw;
+        text-align: justify;
+    }
+
+    .viewTwoLast {
+        background-color: var(--viewTwoLine-color);
         width: 80%;
+        height: 4px;
+        align-self: center;
+    }   
+    
+    .viewThree {
+        height: 100vw;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+
+    .viewThreeContries {
+        height: 30%;
+    }
+
+    .titViewThree p:nth-child(1) {
+        font-size: 3.2vw;
+        text-align: center;
+    }
+
+    .titViewThree p:nth-child(2) {
+        font-size: 4.8vw;
+        text-align: center;
+    }
+
+    .conTitleViewThree {
+        width: 90%;
+        height: 10%;
+        margin-bottom: 5.25%;
+        font-size: 2.6vw;
+    }
+
+    .cardsContriesName {
+        width: 90%;
+        height: 10%;
+        margin-bottom: 10%;
+    }
+
+    .cardsContriesName li {
+        font-size: 3.2vw;
+    }
+
+    .cardsContriesImg {
+        width: 100%;
         height: 100%;
-        margin-left: 10%;
-        float: left;
-        display: flex;
-        flex-flow: column wrap;
+        background-color: rgba(255,255,255,0.5);
+    }
+
+    .viewThree {
+        height: 80vw;
+    }
+
+    .viewFour {
+        height: 80vh;
+        justify-content: space-around;
+    }
+
+    .viewFourLine {
+        width: 80%;
+        height: 4px;
+        margin-top: 10%;
+    }
+
+    .viewFourTittle {
+        width: 50%;
+        height: 10%;
+    }
+
+    .viewFourTittle p:nth-child(1) {
+        font-size: 3.2vw;
+    }
+
+    .viewFourTittle p:nth-child(2) {
+        font-size: 4.8vw;
+    }
+    
+    .viewFourTittle p:nth-child(3) {
+        font-size: 4.8vw;
+       
+    }
+
+    .viewFourCont {
+        width: 80%;
+        height: 12%;
+        font-size: 2.6vw;
+    }
+
+    .viewFourLate {
+        align-self: center;
+    }
+
+    .viewSliderDatas p:first-child {
+        font-size: 3.2vw;
+    }
+
+    .viewSliderDatas p {
+        font-size: 4.8vw;
+    }
+
+    .viewSliderDatas p:last-child {
+        font-size: 2.6vw;
+        text-align: justify;
+    }
+
+    .viewSlider {
+        background-size: contain;
+    }
+
+    .viewFive {
+        height: 50vh;
+        flex-flow: row wrap;
         justify-content: center;
         align-items: center;
     }
 
-    .viewFourTittle {
-        width: 24%;
-        height: 13%;
-        margin-bottom: 2%;
-        margin-top: 18%;
+    .extremText{
+        width: 40%;
+        margin-bottom: 5%;
+    }
+    .extremText p:nth-child(1) {
+        font-size: 3.2vw;
+        margin-top: 0;
     }
 
-    .talk {
+    .extremText p:nth-child(2) {
+        font-size: 4.8vw;
+        line-height: 50%;
+    }
+
+    .extremText p:nth-child(3) {
+        font-size: 2.6vw;
+        text-align: justify;
+    }
+
+    .aventure {
+        width: 80%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .aventureText {
+        width: 40%;
+    }
+
+    .aventureText p:nth-child(1) {
+        font-size: 3.2vw;
+    }
+
+    .aventureText p:nth-child(2) {
+        font-size: 3.2vw;
+    }
+
+    .aventureText p:nth-child(3) {
+        font-size: 2.6vw;
+        text-align: justify;
+    }
+
+    .viewSix {
+        height: 80vh;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .viewSixText {
         background-color: #FFFFFF;
-        width: 35%;
+        width: 80%;
+        height: 30%;
+    }
+
+    .viewSixText p:nth-child(1) {
+        margin-top: 8%;
+        font-size: 2.6vw;
+    }
+
+    .viewSixText p:nth-child(2) {
+        font-size: 4.8vw;
+    }
+
+    .viewSixText p:nth-child(3) {
+        font-size: 4.8vw;
+    }
+
+    .viewSixText p:nth-child(4) {
+        font-size: 2.6vw;
+        text-align: justify;
+    }
+
+    .intoLine{
+        display: none;
+    }
+
+    .formData {
+        width: 60%;
+        height: 38%;
+    }
+     
+    form{
+        width: 100%;
+        height: 80%;
+        margin-top: 0;
+        margin-bottom: 1%;
+    }
+
+    input {
+        width: 100%;
+        height: 25%;
+        font-size: 2.8vw;
+    }
+
+    ::placeholder{
+        font-size: 3vw;
+        text-align: center;
+    }
+    .formDataText p:nth-child(1) {
+        font-size: 4vw;
+    }    
+
+    .formDataText p:nth-child(2) {
+        font-size: 6vw;
+    }
+
+    footer{
+        justify-content:space-around;
+    }
+
+    .footerImg {
+        height: 19%;
+    }
+
+    .logoFooter {
+        height: 7%;
+    }
+
+    .socialNetworkFooter {
+        height: 60%;
+    }
+
+    .talk{
+        width: 30%;
         height: 100%;
+    }
+
+    .talk p:nth-child(1) {
+        font-size: 2.8vw;
     }
 
     .talk p:nth-child(2) {
-        font-family: Cairo,Regular;
         font-size: 2vw;
-        color: #606060;
-        font-weight: normal;
-        text-align: center;
-        line-height: 150%;
     }
 
-    .menu {
-        background-color: #FFFFFF;
-        width: 10%;
-        height: 100%;
-    }
-    
     .menu p {
-        font-family: Cairo,SemiBold;
-        font-size: 2.6vw;
-        color: #606060;
-        font-weight: 600;
-        text-align: center;
+        font-size: 3.2vw;
     }
 
-    .SocialsOurs {
-        background-color: #FFFFFF;
-        width: 35%;
-        height: 100%;
+    .SocialsOurs{
+        width: 30%;
     }
-
-    .SocialsOurs {
-        background-color: #FFFFFF;
-        width: 35%;
-        height: 100%;
+    .SocialsOurs p {
+        font-size: 3.2vw;
     }
 
     .icons {
-        width: 47%;
-        height: 59%;
+        width: 72%;
+        height: 20%;
+        margin-left: 11%;
+        justify-content: center;
+        align-items: center;
     }
 
+    .icons img {
+        width: 30%;
+        height: 85%;
+    }
 
-
-  
 }
