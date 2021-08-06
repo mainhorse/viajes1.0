@@ -1,0 +1,1283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ :root{
+     /* variables of body*/
+     --widthView : 100vw; /* 1920*/
+     --heightView: 100vh; /* 1020*/
+     /* letters */
+     /* variables of nav*/
+     --navWidth : 100%;
+     --navHeigt: 14%; 
+     --navMargin : 0 87% 0 0;
+     --navFont-Family : Segoe UI, Regular;
+     --logowidth: 5%;
+     --logoHeight: 70%;
+     --navMenuSize-worlds: 1.61vw; /* 31px*/
+     --navMenufont-Family : Segoe UI, Segoe UI; 
+     /* variables of main*/
+     --viewWidth: 100%;
+     /* styles view 1*/
+     /* side left*/
+     --viewOneLeft-Fontsize: 31px;
+     --viewOneLeft-color: #606060;
+     --viewOneLeft-color1: #F1B95B;
+     --viewOneLeftFont-family: Segoe UI,Regular;
+     /*  side center*/
+     --viewOneCenterColor-p:#606060;
+     --viewOneCenterFont-family : Segoe UI,Bold;
+     --viewOneCenterFontp1-family: Segoe UI,Regular;
+     --viewOneCenterFontp2-family : Segoe UI,Semibold; 
+     --viewOneCenterFontp3-family: Segoe UI.Regular;
+     --viewOneCenter-size: 5.8vw;   /* 111px 6vw 6em*/
+     --viewOneCenter-size1: 1.6vw; /* 31px  1.6vw */
+     --viewOneCenter-size2: 1.6vw;
+     --viewOneCenter-size3: 1.3vw;
+     /* side Right*/
+
+     --viewOneRightLine-color:#F0B24A;
+     /* style view2*/
+     --viewTwoLine-color: #F0B24A;
+     --viewTwop1-color: #707070;
+     --viewTwop1Font-family : Segoe UI,Semibold;
+     --viewTwop1Font-size: 1.56vw; /* 30px*/
+     --viewTwop2-color: #707070;
+     --viewTwop2Font-family: Segoe UI, Bold;
+     --viewTwop2Font-size: 2.34vw;
+     --viewTwop3-color: #F1B95B;
+     --viewTwoText-icons : Segoe UI,Regular;
+     --viewTwoText-color: #707070;
+     --viewTwoTextFont-size: 1.71vw; 
+ }
+body{
+    width: var(--widthView);
+    height: var(--heightView);
+    font-size: 11px;
+}
+
+nav{
+    display: none;
+    background-color: #FFFFFF;
+    width: var(--navWidth);
+    height: var(--navHeigt);
+    margin: var(--navMargin);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--navFont-Family);
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 0.95;
+    position: fixed;
+    z-index: 100;
+}
+
+nav .logo{
+    width: var(--logowidth);
+    height: var(--logoHeight);
+    background-image: url('../img/logo.png');
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    margin-left: 6.3%;
+}
+
+nav ul{
+    background-color: transparent;
+    width: 40%;
+    height: 29%;
+    margin-left: 10.5%;
+    align-self: center;
+    font-family: var(--navMenufont-Family);
+    font-size: var(--navMenuSize-worlds);
+}
+
+nav ul li{
+    width: 29%;
+    text-decoration: none;
+    display: inline-flex;  
+    color: #606060; 
+    text-align: left;  
+    margin-right: 3%;
+    font-weight: normal;
+}
+
+
+/* contenedor principal*/
+.main{
+    width: 100%;
+    overflow: hidden;
+}
+/* primera vista*/
+
+.viewOne{
+    background-color: #FFFFFF;
+    opacity: 1;
+    width: var(--viewWidth);
+    height: 100vh;
+    display: flex;
+    flex-flow:row nowrap;  
+    justify-content: flex-start;  
+    align-items: center;
+    margin-top: -2%;
+    margin-bottom: 3%;
+    float: left;
+}
+
+ .leftViewOne{
+    width: 3.23%;
+    height: 34%;
+    margin-left: 7%;
+    margin-top: 10%;
+    font-family: var(--viewOneLeftFont-family);
+}
+
+ .leftViewOne ol{
+    width: 100%;
+    height: 100%;
+}   
+
+.leftViewOne ol li{
+    width: 100%;
+    height: 12%;
+    color: var(--viewOneLeft-color);
+    font-size: var(--viewOneLeft-Fontsize);
+    text-align: left;
+    display:table;
+    margin-top: 30%;
+    padding: 0;
+}
+
+.leftViewOne ol li:first-child{
+    color: var(--viewOneLeft-color1);
+    margin-left: 20%;
+    margin-top: 0%;
+    font-weight:normal;
+}
+.leftViewOne ol li:last-child{
+    color: var(--viewOneLeft-color1);
+    margin-left: 20%;
+    font-weight:normal;
+}
+
+.centerViewOne{
+    width: 29%; /* 10.3*/
+    height: 58%;
+    margin-top: 10%;
+    color: white;
+    margin-left: 10%;
+}
+
+.centerViewOne p{   
+    width: 100%;
+    height: 62%;
+    font-family: var(--viewOneCenterFont-family);
+    font-size: var(--viewOneCenter-size);
+    color:var(--viewOneCenterColor-p);
+    line-height: 100%;
+    font-weight: bold;
+}
+
+.letterYellow{
+    color:#F1B95B;
+}
+.centerViewOne p:first-child{
+    width: 100%;
+    height: 7%;
+    font-family: var(--viewOneCenterFontp1-family);
+    font-size: var(--viewOneCenter-size1);
+    text-align: left;
+    font-weight: normal;
+}
+.centerViewOne p:nth-child(3){
+    width: 100%;
+    height: 5%;
+    font-family: var(--viewOneCenter-size3);
+    font-size: var(--viewOneCenter-size3);  
+    margin-bottom: 1%;
+    margin-top: 3%;
+    font-weight: normal;
+}
+.centerViewOne p:last-child{
+    width: 100%;
+    height: 33%;
+    font-family: var(--viewOneCenterFontp2-family);
+    font-size: var(--viewOneCenter-size2);
+    text-align: left;
+    line-height: 100%;
+    margin-top:-7%;
+    font-weight: 600;
+}
+
+.rightViewOne{
+    background-image: url('../img/tuviajeIniciaAca.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment:scroll;
+    background-position: bottom;
+    width: 24%;
+    height: 100%;
+    margin-left: 9.3%;
+    box-shadow: 0px 3px 6px #00000066;
+    border-radius: 0px 0px 5px 5px;
+    opacity: 1; 
+}
+
+.socialNetwork{
+    width: 2%;
+    height: 95vh;  
+    margin-left: 94%;
+    position: fixed;
+    z-index: 100; 
+    margin-top: 15%;
+}
+
+.lineUp{
+    background-color: var(--viewOneRightLine-color) ;
+    width: 4px;
+    height: 30%;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 1px;
+    margin-bottom: 3vh;
+    box-shadow: 0px 0px 20px #FFFFFF;
+}
+
+.facebook{
+    background-image: url('../img/facebook.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 4%;
+    margin-bottom: 3vh;
+    box-shadow: 0px 0px 20px #FFFFFF;
+}
+
+.instagram{
+    background-image: url('../img/instagram.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 4%;
+    margin-bottom: 3vh;
+    box-shadow: 0px 0px 20px #FFFFFF;
+    
+}
+
+.twiter{
+    background-image: url('../img/twiter.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 4%;
+    margin-bottom: 3vh;
+    box-shadow: 0px 0px  20px #FFFFFF;
+}
+
+.youtube{
+    background-image: url('../img/youtube.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 4%;
+    margin-bottom: 3vh;
+    box-shadow: 0px 0px 20px #FFFFFF;
+}
+
+.lineDown{
+    background-color: var(--viewOneRightLine-color) ;
+    width: 4px;
+    height: 30%;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 1px;
+    box-shadow: 0px 0px 20px #FFFFFF;
+}
+
+/* segunda vista*/
+
+.viewTwo{
+    background-color: #FFFFFF;
+    opacity: 1;
+    width: var(--viewWidth);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    float: left;
+}
+
+.viewTwoOne{
+    background-color: var(--viewTwoLine-color);
+    width: 4px;
+    height: 13%;
+    align-self:center;
+}
+
+.viewTwoTwo{
+    width: 23,2%;
+    height: 13%;
+    font-family: var(--viewTwop1Font-family);
+    font-size: var(--viewTwop1Font-size);
+    color: var(--viewTwop1-color);
+    text-align: center;
+    align-self:center;
+    margin-bottom: 4%;
+}
+
+.viewTwoTwo p:first-child{
+    font-family: var(--viewTwop1Font-family);
+    font-size: var(--viewTwop1Font-size);
+    color: var(--viewTwop1-color);
+    font-weight: 600;
+}
+
+.viewTwoTwo p{
+    font-family: var(--viewTwop2Font-family);
+    font-size: var(--viewTwop2Font-size);
+    color: var(--viewTwop2-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.viewTwoTwo p:last-child{
+    color: var(--viewTwop3-color);
+}
+
+.viewTwoIcons{
+    width: 50%;
+    height: 11%;
+    align-self:center;
+    margin-bottom: 1.4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viewTwoIcons img:first-child{
+    width: 13%;
+    height: 100%;
+}
+
+.viewTwoIcons img:nth-child(2){
+    width: 10%;
+    height: 100%;
+}
+
+.viewTwoIcons img:last-child{
+    width: 12%;
+    height: 100%;
+}
+
+.viewTwoTextIcons{
+    width: 60%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viewTwoTextIcons p{
+    width: 30%;
+    height: 100%;
+    font-family: var(--viewTwoText-icons);
+    font-size: 1.3vw;
+    text-align: center;
+    font-weight: normal;
+}
+
+.viewTwoLast{
+    background-color: var(--viewTwoLine-color);
+    width: 4px;
+    height: 13%;
+    align-self:center;
+}
+
+/* view three*/
+
+.viewThree{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.5%;
+    float: left;
+}
+
+.titViewThree{
+    width: 60%;
+    height: 8.6%;
+    margin-bottom: 4.2%;
+}
+
+.titViewThree p:nth-child(1){
+    font-family: Segoe UI,Semibold;
+    font-size: 1.6vw;
+    color: #606060;
+    font-weight: normal;
+}
+
+
+.titViewThree p:nth-child(2){
+    font-family: Segoe UI,Bold;
+    font-size: 2.4vw;
+    color: #F1B95B;
+    font-weight: bold;
+    line-height: 50%;
+}
+
+.conTitleViewThree{
+    width: 60%;
+    height:11%;
+    margin-bottom: 5.25%;
+    font-size: 1.3vw;
+    font-family: Segoe UI, Regular;
+    text-align: center;
+    color: #606060;
+    font-weight: normal;
+}
+
+.viewThreeContries{
+    width: 100%;
+    height: 70%;  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;  
+}
+
+.cardsContriesName{
+    width: 60%;
+    height: 7%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-self:flex-start;
+}
+
+.cardsContriesName li{
+    text-decoration: none;
+    font-family: Segoe UI,Semibold;
+    font-size: 1.6vw;
+    color: #606060;
+    text-align: center;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.cardsContriesName li:nth-child(1){
+    color:#F1B95B;
+}
+
+.cardsContriesImg{
+    width: 100%;
+    height: 75%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.cardSize{
+    width: 25%;
+    height: 100%;
+    float: left;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardSize p{
+    width: 80%;
+    height: 100%;
+    margin-left:20%;
+    font-family: Segoe UI,Semibold;
+    font-size: 5.5vw;
+    font-weight: 600;
+    color: #F1B95B;
+    text-align: center;
+}
+
+.card1 p:nth-child(1){
+    margin-top: 12%;
+}
+
+.card2 p:nth-child(1){
+    margin-top: 25%;
+}
+
+.card3 p:nth-child(1){
+    margin-top: 2%;
+}
+
+.card4 p:nth-child(1){
+    margin-top: 12%;
+}
+
+.card1{
+    background-image: url('../img/bogotaBng.png');
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: cover;
+}
+
+.card1:hover{
+    background-image: url('../img/bogota.png');
+
+}
+
+
+.card2{
+    background-image: url('../img/caliBng.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card2:hover{
+    background-image: url('../img/cali.jpg');
+}
+
+.card3{
+    background-image: url('../img/cartagenaBng.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card3:hover{
+    background-image: url('../img/cartagena.png');
+}
+
+.card4{
+    background-image: url('../img/medellinBng.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card4:hover{
+    background-image: url('../img/medellin.png');
+}
+
+/* view four*/
+.viewFour{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:space-between;
+    align-items: center;
+    float: left;
+}
+
+.viewFourLine{
+    background-color: #F0B24A;
+    width: 4px;
+    height: 12.2%;
+    margin-top: 2%;
+}
+
+.viewFourTittle{
+    width: 24%;
+    height: 13%;
+    margin-bottom: 2%;
+}
+
+.viewFourTittle p{
+    line-height: 100%;
+}
+
+.viewFourTittle p:nth-child(1){
+    font-family: Segoe UI,Semibold;
+    font-size: 1.6vw;
+    color:#606060;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.viewFourTittle p:nth-child(2){
+    font-family: Segoe UI,Bold;
+    font-size: 2.4vw;
+    color:#606060;
+    font-weight:bold;
+    text-align: center;
+}
+
+.viewFourTittle p:nth-child(3){
+    font-family: Segoe UI,Bold;
+    font-size: 2.4vw;
+    color:#F1B95B;
+    font-weight:bold;
+    text-align: center;
+}
+
+.viewFourCont{
+    width: 63%;
+    height: 11%;
+    font-family: Segoe UI,Regular;
+    font-size: 1.3vw;
+    font-weight: normal;
+    text-align: center;
+    color: #606060;
+}
+
+.viewFourLate{
+    width: 81.5%;
+    height: 34%;
+    align-self: flex-end;
+}
+
+.viewSliderDatas{
+    background-color: #FFFFFF;
+    width: 39%;
+    height: 100%;
+    float: left;
+}
+
+.viewSliderDatas p:first-child{
+    font-family: Segoe UI,Semibold;
+    font-size: 1.6vw;
+    color: #606060;
+    text-align: left;
+    font-weight: 600;
+}
+
+.viewSliderDatas p{
+    font-family: Segoe UI,Bold;
+    font-size: 2.4vw;
+    color: #F1B95B;
+    text-align: left;
+    font-weight: bold;
+    line-height: 100%;
+
+}
+
+.viewSliderDatas p:last-child{
+    font-family: Segoe UI,Regular;
+    font-size: 1.3vw;
+    color: #606060;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 20%;
+    line-height: 130%;
+}
+
+.viewSlider{
+    background-image: url('../img/viewSliderVacaciones.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 52%;
+    height: 100%;
+    float: right;
+}
+/* view five*/
+.viewFive{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+}
+
+.extrem{
+    width: 80%;
+    height: 34%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+
+.extremText{
+    width: 38%;
+    height: 100%;
+}
+
+.extremText p:nth-child(1){
+    font-family: Segoe UI,Semibold;
+    font-size: 1.6vw;
+    color: #606060;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 3%;
+}
+
+.extremText p:nth-child(2){
+    font-family: Segoe UI,bold;
+    font-size: 2,4vw;
+    color: #F1B95B;
+    font-weight: bold;
+    text-align: right;
+}
+
+.extremText p:nth-child(3){
+    font-family: Segoe UI,regular;
+    font-size: 1.3vw;
+    color: #606060;
+    font-weight: normal;
+    text-align: right;
+    margin-top: 16%;
+}
+
+.extremImg{
+    background-image: url('../img/extrem.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:52%; /* 1562*/
+    height:100%;
+}
+
+.aventure{
+    width: 80%;
+    height: 34%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.aventureText{
+    background-color: #FFFFFF;
+    width: 38%;
+    height: 100%;
+}
+
+.aventureText p:nth-child(1){
+    font-family: Segoe UI,Semibold;
+    font-size: 1.6vw;
+    color: #606060;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 3%;
+}
+
+.aventureText p:nth-child(2){
+    font-family: Segoe UI,Bold;
+    font-size: 2.4vw;
+    color: #F1B95B;
+    font-weight: bold;
+    text-align: left;
+}
+
+.aventureText p:nth-child(3){
+    font-family: Segoe UI,regular;
+    font-size: 1.3vw;
+    color: #606060;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 16%;
+}
+
+.aventureImg{
+    background-image: url('../img/aventurero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:52%; /* 1562*/
+    height:100%;
+}
+
+/* view six*/
+
+.viewSix{
+    width: 100%;
+    height: 86vh; /* 877px*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.viewSixText{
+    background-color: #FFFFFF;
+    width: 31.4%;
+    height: 72%;
+}
+
+.viewSixText p:nth-child(1){
+    margin-top: 4%;
+    font-family: Segoe UI, Semibold;
+    font-size: 1.3vw;
+    color: #606060;
+    text-align: center;
+    font-weight: 600;
+}
+
+.viewSixText p:nth-child(2){
+    font-family: Segoe UI, Bold;
+    font-size: 2.4vw;
+    color: #606060;
+    text-align: center;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.viewSixText p:nth-child(3){
+    font-family: Segoe UI, Bold;
+    font-size: 2.4vw;
+    color: #F1B95B;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8.5%;
+    line-height: 100%;
+}
+
+.viewSixText p:nth-child(4){
+    font-family: Segoe UI, Regular;
+    font-size: 1.3vw;
+    color: #606060;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 8.5%;
+}
+
+.intoLine{
+    background-color:#F0B24A;
+    width: 4px;
+    height: 72%;
+    margin-left: 3%;
+    margin-right: 2%;
+    border-radius: 1px;
+}
+
+.formData{
+    background-color: #FFFFFF;
+    width: 26%;
+    height: 72%;
+}
+form{
+    width: 100%;
+    height: 32%;
+    margin-top: 33%;
+    margin-bottom: 8%;
+}
+input{
+    width: 100%;
+    height: 25%;
+    font-family: Segoe UI,Regular;
+    font-size: 1.4vw;
+    color: #606060;
+    font-weight: normal;
+    text-align: left;
+    border: 1px solid #707070;
+    border-radius: 16px;
+    padding: 5px;
+    margin-bottom: 4%;
+}
+
+::placeholder{
+    font-family: Segoe UI,Regular;
+    font-size: 1.4vw;
+    color: #606060;
+    font-weight: normal;
+    text-align: left;
+    border: none;
+}
+
+::-moz-placeholder{
+    font-family: Segoe UI,Regular;
+    font-size: 1.4vw;
+    color: #606060;
+    font-weight: normal;
+    text-align: left;
+    border: none;
+}
+
+.formDataText p:nth-child(1){
+    font-family: Segoe UI, Semibold;
+    font-size: 2vw;
+    color: #606060;
+    font-weight: 600;
+    text-align: right;
+    margin-right: 1%;
+    line-height: 70%;
+}
+
+.formDataText p:nth-child(2){
+    font-family: Segoe UI, Semibold;
+    font-size: 3vw;
+    color: #F1B95B;
+    font-weight: 600;
+    text-align: right;
+    line-height: 100%;
+}
+
+/* footer */
+
+footer{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 2000;
+    float: left;
+}
+
+.footerImg{
+    background-image : url('../img/vacations.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 39%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+    filter: contrast(0.9);
+}
+
+.footerImg p{
+    width: 38%;
+    font-family: Segoe UI,Semibold;
+    font-size: 3.75vw;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0)) contrast(1);
+}
+
+.logoFooter{
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 10%;
+    height: 20%;
+    align-self: center;
+    margin-bottom: 2%;
+}
+
+.socialNetworkFooter{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.talk{
+    background-color: #FFFFFF;
+    width: 20%;
+    height: 100%;
+}
+
+.talk p:nth-child(1){
+    font-family: Cairo, SemiBold;
+    font-size: 1.4vw;
+    color: #606060;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.talk p:nth-child(2){
+    font-family: Cairo,Regular;
+    font-size: 1vw;
+    color: #606060;
+    font-weight: normal;
+    text-align: center;
+}
+
+.menu{
+    background-color: #FFFFFF;
+    width: 20%;
+    height: 100%;
+}
+
+.menu p{
+    font-family: Cairo,SemiBold;
+    font-size: 1.6vw;
+    color: #606060;
+    font-weight: 600;
+    text-align: center ;
+}
+
+.SocialsOurs{
+    background-color: #FFFFFF;
+    width: 20%;
+    height: 100%;
+}
+
+.SocialsOurs p{
+    font-family: Cairo, SemiBold;
+    font-size: 1.6vw;
+    color: #606060;
+    text-align: center;
+    font-weight: bold;
+}
+
+.icons{
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 7%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.icons img{
+    width: 25%;
+    height: 100%;
+}
+
+.contSocialNetwork1{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;  
+    align-items: flex-start;
+}
+
+.contSocialNetwork2{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;  
+    align-items: flex-start;    
+}
+
+
+
+@media screen and (max-width: 1400px){
+
+    nav .logo{
+        width: 5%;
+        height: 60%;
+    }
+    nav .logo p:nth-child(1){
+        font-size: 1.4vw;
+        margin-top: 60%;
+
+    }
+    nav .logo p:nth-child(2){
+        font-size: 1.4vw;
+        margin-left: 10%;
+    }
+    .logoFooter{
+        width: 14%;
+    }
+}
+
+@media screen and (max-device-width: 550px){
+
+    .viewOne{
+        width: var(--viewWidth);
+        height: 100vh;
+        display: flex;
+        flex-flow: column-reverse nowrap;  
+        justify-content: flex-start;  
+        align-items: center;
+        margin-top: -2%;
+        margin-bottom: 3%;
+        float: left;
+    }
+
+    .leftViewOne{
+        display: none;
+    }
+
+    .centerViewOne{
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    .centerViewOne p:nth-child(1){
+        font-size: 4vw;
+        margin-bottom: 1%;
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .centerViewOne p:nth-child(2){
+        height: 20%;
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .centerViewOne p:nth-child(3){
+        font-size: 3vw;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .centerViewOne p:nth-child(4){
+        font-size: 5vw;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .rightViewOne{
+        display: none;
+    }
+
+    .socialNetwork{
+        display: none;
+    }
+
+    .viewTwo{
+        background-color: #FFFFFF;
+        opacity: 1;
+        width: var(--viewWidth);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items:center;
+        float: left;
+    }
+
+    .viewTwoOne{
+        width: 80%;
+        height: 2px;
+        margin: 0;
+    }
+
+    .viewTwoTwo p:nth-child(1){
+        font-size: 3vw;
+    }
+
+    .viewTwoTwo p:nth-child(2){
+        font-size: 4.7vw;
+    }
+
+    .viewTwoTwo p:nth-child(3){
+        font-size: 4.7vw;
+    }
+     
+    .viewTwoIcons {
+        width: 100%;
+        height: 11%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: stretch;
+        margin-left: 10%;
+    }
+
+    .viewTwoTextIcons {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        align-content: stretch;
+        margin-top: -18%;
+        margin-left: -68%;
+    }
+    
+    .conTitleViewThree {
+        width: 60%;
+        height: 11%;
+        margin-bottom: 5.25%;
+        font-size: 3vw;
+        font-family: Segoe UI, Regular;
+        text-align: center;
+        color: #606060;
+        font-weight: normal;
+        margin-bottom: 36%;
+    }
+    .cardsContriesImg {
+        width: 100%;
+        height: 75%;
+        background-color: rgba(255,255,255,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .cardSize {
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        float: left;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .viewFourTittle {
+        width: 24%;
+        height: 13%;
+        margin-bottom: 2%;
+        margin-top: 18%;
+    }
+
+    .talk {
+        background-color: #FFFFFF;
+        width: 35%;
+        height: 100%;
+    }
+
+    .talk p:nth-child(2) {
+        font-family: Cairo,Regular;
+        font-size: 2vw;
+        color: #606060;
+        font-weight: normal;
+        text-align: center;
+        line-height: 150%;
+    }
+
+    .menu {
+        background-color: #FFFFFF;
+        width: 10%;
+        height: 100%;
+    }
+    
+    .menu p {
+        font-family: Cairo,SemiBold;
+        font-size: 2.6vw;
+        color: #606060;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .SocialsOurs {
+        background-color: #FFFFFF;
+        width: 35%;
+        height: 100%;
+    }
+
+    .SocialsOurs {
+        background-color: #FFFFFF;
+        width: 35%;
+        height: 100%;
+    }
+
+    .icons {
+        width: 47%;
+        height: 59%;
+    }
+
+
+
+  
+}
