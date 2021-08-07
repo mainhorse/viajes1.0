@@ -512,10 +512,6 @@ nav ul li{
     margin-top: 25%;
 }
 
-.card3 p:nth-child(1){
-    margin-top: 2%;
-}
-
 .card4 p:nth-child(1){
     margin-top: 12%;
 }
@@ -715,7 +711,7 @@ nav ul li{
 
 .extremText p:nth-child(2){
     font-family: Segoe UI,bold;
-    font-size: 2,4vw;
+    font-size: 2.4vw;
     color: #F1B95B;
     font-weight: bold;
     text-align: right;
@@ -1361,7 +1357,7 @@ footer{
     }
 
     .aventureText p:nth-child(2) {
-        font-size: 3.2vw;
+        font-size: 4.8vw;
     }
 
     .aventureText p:nth-child(3) {
@@ -1436,18 +1432,19 @@ footer{
 
     footer{
         justify-content:space-around;
+        
     }
 
     .footerImg {
-        height: 19%;
+        height: 18%;
     }
 
     .logoFooter {
-        height: 7%;
+        height: 15%;
     }
 
     .socialNetworkFooter {
-        height: 60%;
+        height: 50%;
     }
 
     .talk{
